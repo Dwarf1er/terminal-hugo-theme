@@ -11,11 +11,11 @@ authors: ["Nayan Seth", "John Doe", "Author 3", "Author 4", "Author 5"]
 
 ## SVG Testing
 
-## {{< svg logo="india" text="SVG Shortcode Test" styling="inline-block">}} SVG Shortcode Test
+## {{< svg logo="github" text="SVG Shortcode Test" styling="inline-block">}} SVG Shortcode Test
 
-{{< svg logo="india">}} hi testing
+{{< svg logo="github">}} hi testing
 
-This is some random text to test a SVG in between the text. So, keep reading through this text until you see a svg. Still don't see it? Wait for it. It is going to take a while before you see it. Waiting... Waiting... Lorem ipsum should have been used here :/. Any way, here you go {{< svg logo="india">}}. The svg is here
+This is some random text to test a SVG in between the text. So, keep reading through this text until you see a svg. Still don't see it? Wait for it. It is going to take a while before you see it. Waiting... Waiting... Lorem ipsum should have been used here :/. Any way, here you go {{< svg logo="github">}}. The svg is here
 
 ## This is custom Styling {.text-5xl}
 
@@ -145,19 +145,19 @@ console.log(foo(5));
 
 ## Tables
 
-| Option | Description |
-| ------ | ----------- |
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
 | data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
 
 Right aligned columns
 
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
 
 
 ## Links
