@@ -8,31 +8,38 @@
       class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 transition hover:shadow-lg">
       <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-blue-300 via-blue-500 to-dark-blue-600"></span>
 
-      <div class="hidden sm:block sm:shrink-0">
-        <img alt="{{ .title }}" src="{{ .image }}" class="size-16 rounded-lg object-cover shadow-xs" />
+      <div class="sm:flex sm:justify-between sm:gap-4">
+        <div>
+          <h3 class="text-lg font-bold text-white-900 sm:text-xl">
+            {{ .title }}
+          </h3>
+        </div>
+
+        <div class="hidden sm:block sm:shrink-0">
+          <img alt="{{ .title }}" src="{{ .image }}" class="size-16 rounded-lg object-cover shadow-xs" />
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p class="text-sm text-pretty text-gray-500">
+          {{ .description }}
+        </p>
+      </div>
+
+      <div class="mt-4">
+        <a href="{{ .repo }}">
+          {{ partial "content/svg/github.html" . }}
+        </a>
+        {{ if .demo }}
+        <a href="{{ .demo }}">
+          {{ partial "content/svg/external-link.html" . }}
+        </a>
+        {{ end }}
       </div>
     </div>
-
-    <div class="mt-4">
-      <p class="text-sm text-pretty text-gray-500">
-        {{ .description }}
-      </p>
-    </div>
-
-    <div class="mt-4">
-      <a href="{{ .repo }}">
-        {{ partial "content/svg/github.html" . }}
-      </a>
-      {{ if .demo }}
-      <a href="{{ .demo }}">
-        {{ partial "content/svg/external-link.html" . }}
-      </a>
-      {{ end }}
-    </div>
+    {{ end }}
   </div>
-  {{ end }}
-</div>
 
-{{ partial "footer_bottom.html" . }}
+  {{ partial "footer_bottom.html" . }}
 </div>
 {{ end }}
