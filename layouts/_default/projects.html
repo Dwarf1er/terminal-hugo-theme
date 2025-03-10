@@ -13,6 +13,11 @@
           <h3 class="text-lg font-bold text-white-900 sm:text-xl">
             {{ .title }}
           </h3>
+          <a href="{{ .repo }}/stargazers">
+            {{ if .stars }}
+            <img src="{{ .stars }}" alt="Github repo stars" />
+            {{ end }}
+          </a>
         </div>
 
         <div class="hidden sm:block sm:shrink-0">
