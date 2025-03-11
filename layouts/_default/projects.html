@@ -13,7 +13,7 @@
           <h3 class="text-lg font-bold text-white-900 sm:text-xl">
             {{ .title }}
           </h3>
-          <a href="{{ .repo }}/stargazers">
+          <a href="{{ .repo }}/stargazers" target="_blank">
             {{ if .stars }}
             <img src="{{ .stars }}" alt="Github repo stars" />
             {{ end }}
@@ -32,11 +32,11 @@
       </div>
 
       <div class="mt-4">
-        <a href="{{ .repo }}">
+        <a href="{{ .repo }}" target="_blank">
           {{ partial "content/svg/github.html" . }}
         </a>
         {{ if .demo }}
-        <a href="{{ .demo }}">
+        <a href="{{ .demo }}" target="_blank">
           {{ partial "content/svg/external-link.html" . }}
         </a>
         {{ end }}
