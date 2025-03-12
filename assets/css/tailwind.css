@@ -1161,14 +1161,6 @@ svg {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -1194,10 +1186,6 @@ svg {
   height: calc(100dvh);
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-5\/12 {
   width: 41.666667%;
 }
@@ -1206,16 +1194,16 @@ svg {
   width: 100%;
 }
 
+.min-w-32 {
+  min-width: 8rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
 
 .flex-grow {
   flex-grow: 1;
-}
-
-.resize {
-  resize: both;
 }
 
 .grid-cols-1 {
@@ -1437,10 +1425,6 @@ svg {
 
 .font-bold {
   font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .text-gray-500 {
